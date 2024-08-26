@@ -5,9 +5,6 @@ module.exports = {
   content: ["./src/**/*.{html,ts}"],
   darkMode: "selector",
   theme: {
-    fontSize: {
-      base: "18px",
-    },
     extend: {
       colors: {
         // Primary
@@ -33,6 +30,9 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Josefin Sans", ...defaultTheme.fontFamily.sans],
+      },
+      fontSize: {
+        base: "18px",
       },
     },
   },

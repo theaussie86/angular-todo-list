@@ -13,4 +13,8 @@ import { CommonModule } from "@angular/common";
 export class AppComponent {
   title = "NHD Todo List";
   mode: "light" | "dark" = "light";
+
+  public toggleMode() {
+    this.mode = this.mode === "light" ? "dark" : "light";
+  }
 }
