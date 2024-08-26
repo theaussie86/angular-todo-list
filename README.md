@@ -1,41 +1,27 @@
-### Objective
+# NhdTodoList
 
-Your challenge is to build out this todo app and get it looking as close to the design as possible.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.5.
 
-### Brief
+## Development server
 
-Using TypeScript and Angular, your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design to work to. The designs are in JPG static format. This will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. There is also a `style-guide.md` file, which contains the information you'll need, such as color palette and fonts.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-Your users should be able to:
+## Code scaffolding
 
--   View the optimal layout for the app depending on their device's screen size
--   See hover states for all interactive elements on the page
--   Add new todos to the list
--   Mark todos as complete
--   Delete todos from the list
--   Filter by all/active/complete todos
--   Clear all completed todos
--   Toggle light and dark mode
--   **Bonus**: Drag and drop to reorder items on the list
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-### Evaluation Criteria
+## Build
 
--   **TypeScript** best practices
--   Show us your work through your commit history
--   We're looking for you to produce working code, with enough room to demonstrate how to structure components in a small program
--   Completeness: did you complete the features?
--   Correctness: does the functionality act in sensible, thought-out ways?
--   Maintainability: is it written in a clean, maintainable way?
--   Testing: is the system adequately tested?
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-### Deliverables
+## Running unit tests
 
-Make sure to include all source code in the repository. 
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-### CodeSubmit
+## Running end-to-end tests
 
-Please organize, design, test and document your code as if it were going into production - then push your changes to the master branch. After you have pushed your code, you may submit the assignment on the assignment page.
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-All the best and happy coding,
+## Further help
 
-The NHD Team
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
