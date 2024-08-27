@@ -1,0 +1,4 @@
+<div class="rounded-full  size-8" [ngClass]="{'bg-gradient-to-r from-checkBackgroundStart to-checkBackgroundEnd': checked, 'border-2 border-gray-200': !checked, 'cursor-pointer': !isDisabled}" (click)="!isDisabled && toggle()">
+    <img *ngIf="checked" src="icon-check.svg" alt="Check Icon" class="w-full h-full p-2">
+</div>
+

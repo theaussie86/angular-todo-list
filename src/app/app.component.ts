@@ -1,12 +1,12 @@
 import { Component } from "@angular/core";
 import { RouterOutlet } from "@angular/router";
-import { AppModule } from "./app.module";
 import { CommonModule } from "@angular/common";
+import { CheckboxComponent } from "./checkbox/checkbox.component";
 
 @Component({
   selector: "app-root",
   standalone: true,
-  imports: [RouterOutlet, CommonModule],
+  imports: [RouterOutlet, CommonModule, CheckboxComponent],
   templateUrl: "./app.component.html",
   styleUrl: "./app.component.css",
 })
