@@ -17,22 +17,6 @@ export class FooterComponent {
     return this.todoService.todos.length;
   }
 
-  get filterStatus() {
-    return this.todoService.filter || "all";
-  }
-
-  showAll() {
-    this.todoService.setFilter();
-  }
-
-  showActive() {
-    this.todoService.setFilter("active");
-  }
-
-  showCompleted() {
-    this.todoService.setFilter("completed");
-  }
-
   clearCompleted() {
     this.todoService.clearCompleted();
   }

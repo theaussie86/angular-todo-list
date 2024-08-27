@@ -17,14 +17,14 @@ export class FilterBtnsComponent {
   }
 
   showAll() {
-    console.log("Show all");
+    this.todoService.setFilter();
   }
 
   showActive() {
-    console.log("Show active");
+    this.todoService.setFilter("active");
   }
 
   showCompleted() {
-    console.log("Show completed");
+    this.todoService.setFilter("completed");
   }
 }
