@@ -24,7 +24,7 @@ import { Observable } from "rxjs";
 })
 export class AppComponent {
   title = "NHD Todo List";
-  mode: "light" | "dark" = "light";
+  mode: "light" | "dark" = "dark";
   todos: Todo[] = [];
 
   constructor(private todoService: TodoService) {}

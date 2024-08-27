@@ -1,6 +1,6 @@
-<div class="flex gap-x-6 items-end p-6 hover:cursor-pointer border-b border-b-gray-200 group" (click)="toggle()">
+<div class="flex gap-x-6 items-end p-6 hover:cursor-pointer border-b border-b-gray-200 dark:border-veryDarkGrayishBlue group" (click)="toggle()">
     <app-checkbox [checked]="done"></app-checkbox>
-    <div class="text-xl w-full flex justify-between" [ngClass]="{'text-gray-400 line-through': done}">
+    <div class="text-xl w-full flex justify-between" [ngClass]="{'text-gray-400 dark:text-veryDarkGrayishBlueDark line-through': done, 'dark:text-lightGrayishBlueDark dark:hover:text-lightGrayishBlueHover': !done}">
         <span>
             {{text}}
         </span>
