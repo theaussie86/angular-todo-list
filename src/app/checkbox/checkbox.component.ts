@@ -10,9 +10,4 @@ import { Component, Input } from "@angular/core";
 })
 export class CheckboxComponent {
   @Input() checked = false;
-  @Input() isDisabled = false;
-
-  public toggle() {
-    this.checked = !this.checked;
-  }
 }

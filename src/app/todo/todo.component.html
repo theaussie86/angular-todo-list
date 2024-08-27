@@ -1,0 +1,9 @@
+<div class="flex gap-x-6 items-end p-6 hover:cursor-pointer group" (click)="toggle()">
+    <app-checkbox [checked]="done"></app-checkbox>
+    <div class="text-xl w-full flex justify-between" [ngClass]="{'text-gray-400 line-through': done}">
+        <span>
+            {{text}}
+        </span>
+        <img src="icon-cross.svg" alt="delete icon" class="size-6 self-center group-hover:block hidden" (click)="remove()" />
+    </div>
+</div>

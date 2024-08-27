@@ -13,14 +13,18 @@
     <div class="w-full mt-10">
       <div class="relative">
         <!-- add a start adornement to the input field -->
-        <app-checkbox class="absolute left-6 top-5" [isDisabled]="true"></app-checkbox>
-        <input type="text" name="add-task" id="add-task" class="w-full p-6 pl-20 rounded text-xl" placeholder="Create a new todo..."> 
+        <app-checkbox class="absolute left-6 top-5"></app-checkbox>
+        <input type="text" name="add-task" id="add-task" class="w-full p-6 pl-20 rounded-md text-xl" placeholder="Create a new todo..."> 
       </div>
     </div>
 
-    <div class="w-full mt-10 bg-white rounded container divide-y divide-gray-400">
+    <div class="w-full mt-10 bg-white rounded-md container divide-y divide-gray-200">
 
+      <!-- display todos here -->
 
+      <app-todo text="Complete online JavaScript course"></app-todo>
+      <app-todo text="Jog around the park"></app-todo>
+      <app-todo text="10 Minutes Meditation"></app-todo>
 
       <div class="flex justify-between items-center p-6">
         <div class="text-xl font-bold">3 items left</div>
