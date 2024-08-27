@@ -1,6 +1,7 @@
 import { Component, Input } from "@angular/core";
 import { CheckboxComponent } from "../checkbox/checkbox.component";
 import { CommonModule } from "@angular/common";
+import { TodoService } from "../../services/todo.service";
 
 @Component({
   selector: "app-todo",
@@ -10,14 +11,17 @@ import { CommonModule } from "@angular/common";
   styleUrl: "./todo.component.css",
 })
 export class TodoComponent {
-  done: boolean = false;
+  @Input() done: boolean = false;
+  @Input() todoId: number = 0;
   @Input() text: string = "";
 
+  constructor(private todoService: TodoService) {}
+
   public toggle() {
-    this.done = !this.done;
+    this.todoService.toggle(this.todoId);
   }
 
   public remove() {
-    this.done = true;
+    this.todoService.remove(this.todoId);
   }
 }

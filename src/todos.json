@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "text": "Einkaufen gehen",
+    "done": false
+  },
+  {
+    "id": 2,
+    "text": "Hausaufgaben machen",
+    "done": false
+  },
+  {
+    "id": 3,
+    "text": "Fitnessstudio besuchen",
+    "done": true
+  }
+]
