@@ -2,7 +2,7 @@
     <form class="relative" (ngSubmit)="onSubmit()" [formGroup]="form">
 
       <!-- add a start adornement to the input field -->
-       <div class="w-full p-6 pb-1 pl-20 rounded-md text-xl bg-white dark:bg-veryDarkDesaturatedBlue dark:text-lightGrayishBlueDark dark:hover:text-lightGrayishBlueHover">
+       <div class="w-full p-6 pb-1 pl-20 rounded-md text-xl bg-white text-veryDarkGrayishBlue dark:bg-veryDarkDesaturatedBlue dark:text-lightGrayishBlueDark dark:hover:text-lightGrayishBlueHover">
            <app-checkbox class="absolute left-6 top-5"></app-checkbox>
            <input type="text" name="add-task" formControlName="text" id="add-task"  placeholder="Create a new todo..." class="w-full outline-none bg-inherit">
            @if(textIsInvalid){
