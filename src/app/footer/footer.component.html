@@ -1,9 +1,9 @@
 <div class="flex text-base justify-between items-center p-6 text-darkGrayishBlue dark:text-darkGrayishBlueDark">
     <div class="font-bold todos">{{todos}} items left</div>
     <div class="flex gap-x-2">
-      <button class="font-bold hover:cursor-pointer hover:text-veryDarkGrayishBlue" [ngClass]="{'text-brightBlue': filterStatus === 'all'}" (click)="showAll()">All</button>
-      <button class="font-bold hover:cursor-pointer hover:text-veryDarkGrayishBlue" [ngClass]="{'text-brightBlue': filterStatus === 'active'}" (click)="showActive()">Active</button>
-      <button class="font-bold hover:cursor-pointer hover:text-veryDarkGrayishBlue" [ngClass]="{'text-brightBlue': filterStatus === 'completed'}" (click)="showCompleted()">Completed</button>
+      <button class="font-bold hover:cursor-pointer hover:text-veryDarkGrayishBlue dark:hover:text-lightGrayishBlueHover" [ngClass]="{'text-brightBlue': filterStatus === 'all'}" (click)="showAll()">All</button>
+      <button class="font-bold hover:cursor-pointer hover:text-veryDarkGrayishBlue dark:hover:text-lightGrayishBlueHover" [ngClass]="{'text-brightBlue': filterStatus === 'active'}" (click)="showActive()">Active</button>
+      <button class="font-bold hover:cursor-pointer hover:text-veryDarkGrayishBlue dark:hover:text-lightGrayishBlueHover" [ngClass]="{'text-brightBlue': filterStatus === 'completed'}" (click)="showCompleted()">Completed</button>
     </div>
-    <button class="font-bold hover:cursor-pointer hover:text-veryDarkGrayishBlue" (click)="clearCompleted()">Clear Completed</button>
+    <button class="font-bold hover:cursor-pointer hover:text-veryDarkGrayishBlue dark:hover:text-lightGrayishBlueHover" (click)="clearCompleted()">Clear Completed</button>
 </div>
