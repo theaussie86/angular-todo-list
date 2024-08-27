@@ -34,4 +34,16 @@ export class TodoService {
       this.todos.splice(index, 1);
     }
   }
+
+  add(text: string) {
+    const id = this.generateId();
+    this.todos.push({ id, text, done: false });
+  }
+
+  /* helper function */
+  private generateId(): number {
+    const ids = this.todos.map((todo) => todo.id);
+    const maxId = Math.max(...ids);
+    return maxId + 1;
+  }
 }

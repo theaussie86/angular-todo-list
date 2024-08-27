@@ -4,11 +4,18 @@ import { CommonModule } from "@angular/common";
 import { CheckboxComponent } from "./checkbox/checkbox.component";
 import { TodoComponent } from "./todo/todo.component";
 import { Todo, TodoService } from "../services/todo.service";
+import { FormComponent } from "./form/form.component";
 
 @Component({
   selector: "app-root",
   standalone: true,
-  imports: [RouterOutlet, CommonModule, CheckboxComponent, TodoComponent],
+  imports: [
+    RouterOutlet,
+    CommonModule,
+    CheckboxComponent,
+    TodoComponent,
+    FormComponent,
+  ],
   templateUrl: "./app.component.html",
   styleUrl: "./app.component.css",
 })
