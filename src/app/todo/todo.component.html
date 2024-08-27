@@ -1,4 +1,4 @@
-<div class="flex gap-x-6 items-end p-6 hover:cursor-pointer group" (click)="toggle()">
+<div class="flex gap-x-6 items-end p-6 hover:cursor-pointer border-b border-b-gray-200 group" (click)="toggle()">
     <app-checkbox [checked]="done"></app-checkbox>
     <div class="text-xl w-full flex justify-between" [ngClass]="{'text-gray-400 line-through': done}">
         <span>

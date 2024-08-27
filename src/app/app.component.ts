@@ -5,6 +5,8 @@ import { CheckboxComponent } from "./checkbox/checkbox.component";
 import { TodoComponent } from "./todo/todo.component";
 import { Todo, TodoService } from "../services/todo.service";
 import { FormComponent } from "./form/form.component";
+import { FooterComponent } from "./footer/footer.component";
+import { Observable } from "rxjs";
 
 @Component({
   selector: "app-root",
@@ -15,6 +17,7 @@ import { FormComponent } from "./form/form.component";
     CheckboxComponent,
     TodoComponent,
     FormComponent,
+    FooterComponent,
   ],
   templateUrl: "./app.component.html",
   styleUrl: "./app.component.css",
@@ -27,8 +30,9 @@ export class AppComponent {
   constructor(private todoService: TodoService) {}
 
   ngOnInit() {
-    this.todos = this.todoService.getTodos();
-    console.log(this.todos);
+    this.todoService.todos$.subscribe((todos) => {
+      this.todos = todos;
+    });
   }
 
   public toggleMode() {

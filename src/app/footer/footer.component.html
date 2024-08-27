@@ -1,0 +1,9 @@
+<div class="flex justify-between items-center p-6 text-gray-500">
+    <div class="text-xl font-bold">{{todos}} items left</div>
+    <div class="flex gap-x-2">
+      <button class="text-xl font-bold hover:cursor-pointer" (click)="showAll()">All</button>
+      <button class="text-xl font-bold hover:cursor-pointer" (click)="showActive()">Active</button>
+      <button class="text-xl font-bold hover:cursor-pointer" (click)="showCompleted()">Completed</button>
+    </div>
+    <button class="text-xl font-bold hover:cursor-pointer" (click)="clearCompleted()">Clear Completed</button>
+</div>

@@ -12,21 +12,13 @@
 
     <app-form></app-form>
 
-    <div class="w-full mt-10 bg-white rounded-md container divide-y divide-gray-200">
+    <div class="w-full mt-10 bg-white rounded-md container">
 
       <!-- display todos here -->
 
       <app-todo *ngFor="let todo of todos" text={{todo.text}} [todoId]="todo.id" [done]="todo.done"></app-todo>
 
-      <div class="flex justify-between items-center p-6">
-        <div class="text-xl font-bold">3 items left</div>
-        <div class="flex">
-          <button class="text-xl font-bold">All</button>
-          <button class="text-xl font-bold">Active</button>
-          <button class="text-xl font-bold">Completed</button>
-        </div>
-        <button class="text-xl font-bold">Clear Completed</button>
-      </div>
+      <app-footer></app-footer>
     </div>
 
   </div>
