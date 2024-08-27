@@ -1,10 +1,11 @@
 import { Component } from "@angular/core";
 import { TodoService } from "../../services/todo.service";
+import { CommonModule } from "@angular/common";
 
 @Component({
   selector: "app-footer",
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: "./footer.component.html",
   styleUrl: "./footer.component.css",
 })
@@ -13,6 +14,10 @@ export class FooterComponent {
 
   get todos() {
     return this.todoService.todos.length;
+  }
+
+  get filterStatus() {
+    return this.todoService.filter || "all";
   }
 
   showAll() {
