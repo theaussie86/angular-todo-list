@@ -1,7 +1,8 @@
 <div class="bg-veryLightGray dark:bg-veryDarkBlue h-screen relative" [ngClass]="{'dark': mode === 'dark'}">
 
-  <img [src]="mode === 'light' ? 'bg-desktop-light.jpg':'bg-desktop-dark.jpg'" alt="light background" class="w-full absolute" />
-  <div class="sm:max-w-2xl mx-auto z-10">
+  <img [src]="mode === 'light' ? 'bg-desktop-light.jpg':'bg-desktop-dark.jpg'" alt="background desktop" class="hidden lg:block w-full absolute" />
+  <img [src]="mode === 'light' ? 'bg-mobile-light.jpg':'bg-mobile-dark.jpg'" alt="background mobile" class="block lg:hidden w-full absolute" />
+  <div class="px-8 sm:px-12 sm:max-w-2xl mx-auto z-10">
 
     <div class="flex justify-between items-center pt-24 text-white tracking-widest relative">
       <h1 class="text-6xl font-bold ">TODO</h1>
@@ -20,6 +21,11 @@
 
       <app-footer></app-footer>
     </div>
+
+    <div class="md:hidden bg-white p-6 rounded-md mt-10">
+      <app-filter-btns></app-filter-btns>
+    </div>
+
 
     <div class="w-full mt-20">
       <p class="text-darkGrayishBlue dark:text-darkGrayishBlueDark text-center">Drag and drop to reorder list</p>

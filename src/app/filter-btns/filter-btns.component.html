@@ -1,0 +1,5 @@
+<div class="flex justify-around gap-x-2">
+    <button class="font-bold text-darkGrayishBlue dark:text-darkGrayishBlueDark hover:cursor-pointer hover:text-veryDarkGrayishBlue dark:hover:text-lightGrayishBlueHover" [ngClass]="{'text-brightBlue': filterStatus === 'all'}" (click)="showAll()">All</button>
+    <button class="font-bold text-darkGrayishBlue dark:text-darkGrayishBlueDark hover:cursor-pointer hover:text-veryDarkGrayishBlue dark:hover:text-lightGrayishBlueHover" [ngClass]="{'text-brightBlue': filterStatus === 'active'}" (click)="showActive()">Active</button>
+    <button class="font-bold text-darkGrayishBlue dark:text-darkGrayishBlueDark hover:cursor-pointer hover:text-veryDarkGrayishBlue dark:hover:text-lightGrayishBlueHover" [ngClass]="{'text-brightBlue': filterStatus === 'completed'}" (click)="showCompleted()">Completed</button>
+  </div>

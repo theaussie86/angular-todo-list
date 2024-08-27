@@ -7,6 +7,7 @@ import { Todo, TodoService } from "../services/todo.service";
 import { FormComponent } from "./form/form.component";
 import { FooterComponent } from "./footer/footer.component";
 import { Observable } from "rxjs";
+import { FilterBtnsComponent } from "./filter-btns/filter-btns.component";
 
 @Component({
   selector: "app-root",
@@ -18,6 +19,7 @@ import { Observable } from "rxjs";
     TodoComponent,
     FormComponent,
     FooterComponent,
+    FilterBtnsComponent,
   ],
   templateUrl: "./app.component.html",
   styleUrl: "./app.component.css",
