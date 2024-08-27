@@ -52,7 +52,7 @@ export class TodoService {
 
   add(text: string) {
     const id = this.generateId();
-    this.todos.push({ id, text, done: false });
+    this._todos.push({ id, text, done: false });
     this._todosSubject.next(this.filteredTodos);
   }
 
