@@ -1,0 +1,1 @@
+      <app-todo *ngFor="let todo of todos" text={{todo.text}} [todoId]="todo.id" [done]="todo.done" [attr.draggable]="true" (dragstart)="onTaskDragStart($event)" (dragover)="onTaskDragOver($event)" (drop)="onTaskDrop($event)" ></app-todo>

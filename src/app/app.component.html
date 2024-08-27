@@ -15,9 +15,7 @@
 
     <div class="w-full mt-10 bg-white dark:bg-veryDarkDesaturatedBlue rounded-md relative">
 
-      <!-- display todos here -->
-
-      <app-todo *ngFor="let todo of todos" text={{todo.text}} [todoId]="todo.id" [done]="todo.done"></app-todo>
+      <app-todos></app-todos>
 
       <app-footer></app-footer>
     </div>

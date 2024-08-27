@@ -8,6 +8,7 @@ import { FormComponent } from "./form/form.component";
 import { FooterComponent } from "./footer/footer.component";
 import { Observable } from "rxjs";
 import { FilterBtnsComponent } from "./filter-btns/filter-btns.component";
+import { TodosComponent } from "./todos/todos.component";
 
 @Component({
   selector: "app-root",
@@ -16,10 +17,10 @@ import { FilterBtnsComponent } from "./filter-btns/filter-btns.component";
     RouterOutlet,
     CommonModule,
     CheckboxComponent,
-    TodoComponent,
     FormComponent,
     FooterComponent,
     FilterBtnsComponent,
+    TodosComponent,
   ],
   templateUrl: "./app.component.html",
   styleUrl: "./app.component.css",
@@ -27,15 +28,6 @@ import { FilterBtnsComponent } from "./filter-btns/filter-btns.component";
 export class AppComponent {
   title = "NHD Todo List";
   mode: "light" | "dark" = "light";
-  todos: Todo[] = [];
-
-  constructor(private todoService: TodoService) {}
-
-  ngOnInit() {
-    this.todoService.todos$.subscribe((todos) => {
-      this.todos = todos;
-    });
-  }
 
   public toggleMode() {
     this.mode = this.mode === "light" ? "dark" : "light";
